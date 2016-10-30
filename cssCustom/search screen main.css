@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.col-md-12 {
+	color: black;
+	font-family: serif;
+  /**box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444**/
+}
+
+.text-left {
+	font-family: serif;
+	font-size: 30px;
+	color: #6A0888;
+}
+
+.form-group-2 {
+	padding-top: 10px;
+	font-family: serif;
+	font-size: 20px;
+	color: black;
+}
+
+.text-info {
+	font-family: serif;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 50px;
+	background-color: #E6E6E6;
+	color: black;
+
+}
+
+/*.glyphicon {
+	color: #6A0888;
+	font-size: 20px;
+}*/
+
+.col-md-3 {
+	color: black;
+	padding-top: 10px;
+}
+
+.a {
+	color: black;
+}
+
+.checkbox {
+	font-size: 17px;
+}

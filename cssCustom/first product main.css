@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.col-md-12 {
+	color: black;
+	font-family: serif;
+  /*--box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;-->*/
+}
+
+.text-center {
+	font-family: serif;
+	font-size: 35px;
+	color: black;
+}
+
+.text-left {
+	font-family: serif;
+	font-size: 30px;
+	color: #6A0888;
+}
+
+.form-group-2 {
+	padding-left: 30px;
+	font-family: serif;
+	font-size: 25px;
+	color: black;
+}
+
+.text-info {
+	font-family: serif;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 50px;
+	background-color: #E6E6E6;
+	color: #205D73;
+
+}
+
+.radio {
+	font-family: serif;
+	font-size: 20px;
+	padding-left: 20px;
+	color:black;
+	background-color: #FAFAFA;
+}
+
+/************************
+*this is the nav tab css*
+*************************/
+
+/*.nav-tabs{
+  background-color:#161616;
+}*/
+.tab-content{
+    border: 2px solid #303136;
+    padding: 10px;
+}
+.nav-tabs > li > a{
+  border: 2px solid #303136;;
+}
+.nav-tabs > li > a:hover{
+    border: medium none;
+    border-radius: 2;
+}
