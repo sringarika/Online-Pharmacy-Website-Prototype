@@ -146,28 +146,28 @@
               <h2>Please enter your shipping information</h2>
             </div>
             <div class="form-group">
-              <label class="control-label" for="mobile">Address Line 1</label><input style = "border:1px solid"class="form-control validate[required,custom[mobile]]" id="mobile" name="mobile_add" type="tel" value="" placeholder="Street Address">
+              <label class="control-label" for="aline1">Address Line 1</label><input style = "border:1px solid"class="form-control validate[required,custom[mobile]]" id="aline1" name="mobile_add" type="tel" value="" placeholder="Street Address">
             </div>
             <div class="form-group">
-              <label class="control-label" for="mobile">Address Line 2 (Optional)</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="mobile" name="mobile_add" type="tel" value="" placeholder="Apartment Number">
+              <label class="control-label" for="aline2">Address Line 2 (Optional)</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="aline2" name="mobile_add" type="tel" value="" placeholder="Apartment Number">
             </div>
             <div class="form-group">
-              <label class="control-label" for="mobile">Mobile</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="mobile" name="mobile_add" type="tel" value="" placeholder="555-555-5555">
+              <label class="control-label" for="amobile">Mobile</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="amobile" name="mobile_add" type="tel" value="" placeholder="555-555-5555">
             </div>
             <div class="form-group">
-              <label class="control-label" for="signupEmailagain">Zipcode</label>
-              <input style = "border:1px solid" id="signupEmailagain" type="text" maxlength="50" class="form-control">
+              <label class="control-label" for="asignupEmailagain">Zipcode</label>
+              <input style = "border:1px solid" id="asignupEmailagain" type="text" maxlength="50" class="form-control">
             </div>
             <div class="form-group">
-              <label class="control-label" for="signupPassword">City</label>
-              <input style = "border:1px solid" id="signupPassword" type="text" maxlength="25" class="form-control" length="40">
+              <label class="control-label" for="asignupPassword">City</label>
+              <input style = "border:1px solid" id="asignupPassword" type="text" maxlength="25" class="form-control" length="40">
             </div>
             <div class="form-group">
-              <label class="control-label" for="signupPasswordagain">State</label>
-              <input style = "border:1px solid" id="signupPasswordagain" type="text" maxlength="25" class="form-control">
+              <label class="control-label" for="asignupPasswordagain">State</label>
+              <input style = "border:1px solid" id="asignupPasswordagain" type="text" maxlength="25" class="form-control">
             </div>
             <div class="control-group col-2 col-offset-5">
-              <input type="checkbox" name="same-address" id="same-address">
+              <input type="checkbox" name="same-address" id="same-address" onclick="copyaddress()">
               <label for="address-2">Use this address for billing</label>
             </div>
             <div class="panel-body">
@@ -176,25 +176,25 @@
               <h2>Please enter your billing information</h2>
             </div>
             <div class="form-group">
-              <label class="control-label" for="mobile">Address Line 1</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="mobile" name="mobile_add" type="tel" value="" placeholder="Street Address">
+              <label class="control-label" for="bline1">Address Line 1</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="bline1" name="mobile_add" type="tel" value="" placeholder="Street Address">
             </div>
             <div class="form-group">
-              <label class="control-label" for="mobile">Address Line 2 (Optional)</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="mobile" name="mobile_add" type="tel" value="" placeholder="Apartment Number">
+              <label class="control-label" for="bline2">Address Line 2 (Optional)</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="bline2" name="mobile_add" type="tel" value="" placeholder="Apartment Number">
             </div>
             <div class="form-group">
-              <label class="control-label" for="mobile">Mobile</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="mobile" name="mobile_add" type="tel" value="" placeholder="555-555-5555">
+              <label class="control-label" for="bmobile">Mobile</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="bmobile" name="mobile_add" type="tel" value="" placeholder="555-555-5555">
             </div>
             <div class="form-group">
-              <label class="control-label" for="signupEmailagain">Zipcode</label>
-              <input style = "border:1px solid" id="signupEmailagain" type="text" maxlength="50" class="form-control">
+              <label class="control-label" for="bsignupEmailagain">Zipcode</label>
+              <input style = "border:1px solid" id="bsignupEmailagain" type="text" maxlength="50" class="form-control">
             </div>
             <div class="form-group">
-              <label class="control-label" for="signupPassword">City</label>
-              <input style = "border:1px solid" id="signupPassword" type="text" maxlength="25" class="form-control" length="40">
+              <label class="control-label" for="bsignupPassword">City</label>
+              <input style = "border:1px solid" id="bsignupPassword" type="text" maxlength="25" class="form-control" length="40">
             </div>
             <div class="form-group">
-              <label class="control-label" for="signupPasswordagain">State</label>
-              <input style = "border:1px solid" id="signupPasswordagain" type="text" maxlength="25" class="form-control">
+              <label class="control-label" for="bsignupPasswordagain">State</label>
+              <input style = "border:1px solid" id="bsignupPasswordagain" type="text" maxlength="25" class="form-control">
             </div>
             <div class="form-group">
               <a href="sform2.html" id="signupSubmit" type="submit" class="btn btn-info btn-block">Proceed to Payment</a>
@@ -289,5 +289,18 @@ aria-hidden="true">
         }
       });
     });
+
+    function copyaddress() {
+      if (document.getElementById("same-address").checked == true) {
+        document.getElementById("bline1").value = document.getElementById("aline1").value;
+        document.getElementById("bline2").value = document.getElementById("aline2").value;
+        document.getElementById("bmobile").value = document.getElementById("amobile").value;
+        document.getElementById("bsignupEmailagain").value = document.getElementById("asignupEmailagain").value;
+        document.getElementById("bsignupPassword").value = document.getElementById("asignupPassword").value;
+        document.getElementById("bsignupPasswordagain").value = document.getElementById("asignupPasswordagain").value;        
+      }
+    }
+
+
   </script>
 </body>
