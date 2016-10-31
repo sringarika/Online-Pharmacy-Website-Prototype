@@ -24,15 +24,15 @@
 
 #UPMC{
 	display: inline-block;
-	margin-top: 20px;
+	margin-top: 40px;
 	line-height: 40px;
 }
 
 .logo {
 	margin-left: 10px;
-	margin-top: 10px;
-	margin-bottom: 2px;
-	height: 35px;
+	margin-top: 1px;
+	margin-bottom: 20px;
+	height: 60px;
 	float:left;
 }
 
@@ -384,11 +384,11 @@ input {
   font-weight: 300;
   opacity: 1;
 }
-.a{
+/*.a{
    color: #aaa;
   font-weight: 300;
   opacity: 1;
-}
+}*/
 
 ::-webkit-input-placeholder {
   color: #aaa;
