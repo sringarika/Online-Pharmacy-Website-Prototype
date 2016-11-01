@@ -145,8 +145,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', end
 /*******************************/
 
 .navbar-default {
-	font-size: 18px;
-	font-weight: bold;
   background-color: #a13ce7;
   border-color: #803184;
 }
@@ -405,8 +403,4 @@ input {
 ::-moz-focus-inner {
   border: 0;
   padding: 0;
-}
-
-.mainLoginInput::-moz-placeholder {
-   font-family: 'myFont', Arial, Helvetica, sans-serif;
 }
