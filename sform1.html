@@ -30,7 +30,25 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/JavaScript"></script>
+     <script type="text/JavaScript">
+          $(document).ready(function ()
+          {
+              $("#shipping :radio").change(function ()
+              {
+                  var value=$(this).val();
+                 if(value==0)
+                 { document.getElementById("shipping-price").innerHTML = "$0.00";
+                 document.getElementById("total-price").innerHTML = "$23.09";}
+                 if(value==1)
+                 {document.getElementById("shipping-price").innerHTML = "$10.00";
+                 document.getElementById("total-price").innerHTML = "$33.09";}
+                 if(value==2)
+                 {document.getElementById("shipping-price").innerHTML = "$20.00";
+                 document.getElementById("total-price").innerHTML = "$43.09";}
+             });
+         });
+     </script>
 
 <body>
 <!-- The begining of the header
@@ -65,7 +83,7 @@
           <li>|</li>
           <li><a href="under_construction.html">Contact</li>
           <li>
-              <a href = "shopping cart.html"><button type="button" style = "border:1px solid" class="btn btn-default" aria-label="Left Align">
+              <a href = "shopping cart.html"><button style="border: 1px solid;" type="button" class="btn btn-default" aria-label="Left Align">
                 My Cart&nbsp;<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>(2)
               </button></a>
           </li>
@@ -90,7 +108,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li ><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li ><a href="under_construction.html">New Deals</a></li>
             <!--<li><a href="under_construction.html">HealthCare</a></li>-->
             <li><a href="product.html">All Products</a></li>
@@ -140,186 +158,186 @@
                     </ul>
                 </div>
 
-        <div class="panel-body">
-          <form method="POST" action="#" role="form">
-            <div class="form-group">
-              <h2>Please enter your shipping information</h2>
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="aline1">Address Line 1</label><input style = "border:1px solid"class="form-control validate[required,custom[mobile]]" id="aline1" name="mobile_add" type="tel" value="" placeholder="Street Address">
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="aline2">Address Line 2 (Optional)</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="aline2" name="mobile_add" type="tel" value="" placeholder="Apartment Number">
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="amobile">Mobile</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="amobile" name="mobile_add" type="tel" value="" placeholder="555-555-5555">
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="asignupEmailagain">Zipcode</label>
-              <input style = "border:1px solid" id="asignupEmailagain" type="text" maxlength="50" class="form-control">
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="asignupPassword">City</label>
-              <input style = "border:1px solid" id="asignupPassword" type="text" maxlength="25" class="form-control" length="40">
-            </div>
-            <form action="./" method="GET">
-            <div class="form-group">
-              <label class="control-label" for="asignupPassword">State</label>
+<!--form begins here -->
+<div class="col-md-8" id="address-form">
+<div class="box">
+<div class="panel-body">
+  <form method="POST" action="#" role="form">
+    <div class="form-group">
+      <h2>Please enter your shipping information</h2>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="aline1">Address Line 1</label><input style = "border:1px solid"class="form-control validate[required,custom[mobile]]" id="aline1" name="mobile_add" type="tel" value="" placeholder="Street Address">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="aline2">Address Line 2 (Optional)</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="aline2" name="mobile_add" type="tel" value="" placeholder="Apartment Number">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="amobile">Mobile</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="amobile" name="mobile_add" type="tel" value="" placeholder="555-555-5555">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="asignupEmailagain">Zipcode</label>
+      <input style = "border:1px solid" id="asignupEmailagain" type="text" maxlength="50" class="form-control">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="asignupPassword">City</label>
+      <input style = "border:1px solid" id="asignupPassword" type="text" maxlength="25" class="form-control" length="40">
+    </div>
+    <form action="./" method="GET">
+      <div class="form-group">
+        <label class="control-label" for="asignupPassword">State</label>
 
-<select name="state">
-<option value="null">Enter your state</option>
-  <option value="AL">Alabama</option>
-  <option value="AK">Alaska</option>
-  <option value="AZ">Arizona</option>
-  <option value="AR">Arkansas</option>
-  <option value="CA">California</option>
-  <option value="CO">Colorado</option>
-  <option value="CT">Connecticut</option>
-  <option value="DE">Delaware</option>
-  <option value="DC">District of Columbia</option>
-  <option value="FL">Florida</option>
-  <option value="GA">Georgia</option>
-  <option value="HI">Hawaii</option>
-  <option value="ID">Idaho</option>
-  <option value="IL">Illinois</option>
-  <option value="IN">Indiana</option>
-  <option value="IA">Iowa</option>
-  <option value="KS">Kansas</option>
-  <option value="KY">Kentucky</option>
-  <option value="LA">Louisiana</option>
-  <option value="ME">Maine</option>
-  <option value="MD">Maryland</option>
-  <option value="MA">Massachusetts</option>
-  <option value="MI">Michigan</option>
-  <option value="MN">Minnesota</option>
-  <option value="MS">Mississippi</option>
-  <option value="MO">Missouri</option>
-  <option value="MT">Montana</option>
-  <option value="NE">Nebraska</option>
-  <option value="NV">Nevada</option>
-  <option value="NH">New Hampshire</option>
-  <option value="NJ">New Jersey</option>
-  <option value="NM">New Mexico</option>
-  <option value="NY">New York</option>
-  <option value="NC">North Carolina</option>
-  <option value="ND">North Dakota</option>
-  <option value="OH">Ohio</option>
-  <option value="OK">Oklahoma</option>
-  <option value="OR">Oregon</option>
-  <option value="PA">Pennsylvania</option>
-  <option value="RI">Rhode Island</option>
-  <option value="SC">South Carolina</option>
-  <option value="SD">South Dakota</option>
-  <option value="TN">Tennessee</option>
-  <option value="TX">Texas</option>
-  <option value="UT">Utah</option>
-  <option value="VT">Vermont</option>
-  <option value="VA">Virginia</option>
-  <option value="WA">Washington</option>
-  <option value="WV">West Virginia</option>
-  <option value="WI">Wisconsin</option>
-  <option value="WY">Wyoming</option>
-</select>
-</form>
+        <select name="state">
+          <option value="null">Enter your state</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
+      </form>
+    </div>
+    <div class="control-group col-2 col-offset-5">
+      <input type="checkbox" name="same-address" id="same-address" onclick="copyaddress()">
+      <label for="address-2">Use this address for billing</label>
+    </div>
+
+    <div class="form-group">
+      <h2>Please enter your billing information</h2>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="bline1">Address Line 1</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="bline1" name="mobile_add" type="tel" value="" placeholder="Street Address">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="bline2">Address Line 2 (Optional)</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="bline2" name="mobile_add" type="tel" value="" placeholder="Apartment Number">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="bmobile">Mobile</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="bmobile" name="mobile_add" type="tel" value="" placeholder="555-555-5555">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="bsignupEmailagain">Zipcode</label>
+      <input style = "border:1px solid" id="bsignupEmailagain" type="text" maxlength="50" class="form-control">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="bsignupPassword">City</label>
+      <input style = "border:1px solid" id="bsignupPassword" type="text" maxlength="25" class="form-control" length="40">
+    </div>
+    <form action="./" method="GET">
+      <div class="form-group">
+        <label class="control-label" for="asignupPassword">State</label>
+
+        <select name="state">
+          <option value="null">Enter your state</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
+      </form>
+    </div>
+  </div>
 </div>
-            <div class="control-group col-2 col-offset-5">
-              <input type="checkbox" name="same-address" id="same-address" onclick="copyaddress()">
-              <label for="address-2">Use this address for billing</label>
-            </div>
-<br>
-<br>
-
-            <div class="form-group">
-              <h2>Please enter your billing information</h2>
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="bline1">Address Line 1</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="bline1" name="mobile_add" type="tel" value="" placeholder="Street Address">
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="bline2">Address Line 2 (Optional)</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="bline2" name="mobile_add" type="tel" value="" placeholder="Apartment Number">
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="bmobile">Mobile</label><input style = "border:1px solid" class="form-control validate[required,custom[mobile]]" id="bmobile" name="mobile_add" type="tel" value="" placeholder="555-555-5555">
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="bsignupEmailagain">Zipcode</label>
-              <input style = "border:1px solid" id="bsignupEmailagain" type="text" maxlength="50" class="form-control">
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="bsignupPassword">City</label>
-              <input style = "border:1px solid" id="bsignupPassword" type="text" maxlength="25" class="form-control" length="40">
-            </div>
-            <form action="./" method="GET">
-            <div class="form-group">
-              <label class="control-label" for="asignupPassword">State</label>
-
-<select name="state">
-<option value="null">Enter your state</option>
-  <option value="AL">Alabama</option>
-  <option value="AK">Alaska</option>
-  <option value="AZ">Arizona</option>
-  <option value="AR">Arkansas</option>
-  <option value="CA">California</option>
-  <option value="CO">Colorado</option>
-  <option value="CT">Connecticut</option>
-  <option value="DE">Delaware</option>
-  <option value="DC">District of Columbia</option>
-  <option value="FL">Florida</option>
-  <option value="GA">Georgia</option>
-  <option value="HI">Hawaii</option>
-  <option value="ID">Idaho</option>
-  <option value="IL">Illinois</option>
-  <option value="IN">Indiana</option>
-  <option value="IA">Iowa</option>
-  <option value="KS">Kansas</option>
-  <option value="KY">Kentucky</option>
-  <option value="LA">Louisiana</option>
-  <option value="ME">Maine</option>
-  <option value="MD">Maryland</option>
-  <option value="MA">Massachusetts</option>
-  <option value="MI">Michigan</option>
-  <option value="MN">Minnesota</option>
-  <option value="MS">Mississippi</option>
-  <option value="MO">Missouri</option>
-  <option value="MT">Montana</option>
-  <option value="NE">Nebraska</option>
-  <option value="NV">Nevada</option>
-  <option value="NH">New Hampshire</option>
-  <option value="NJ">New Jersey</option>
-  <option value="NM">New Mexico</option>
-  <option value="NY">New York</option>
-  <option value="NC">North Carolina</option>
-  <option value="ND">North Dakota</option>
-  <option value="OH">Ohio</option>
-  <option value="OK">Oklahoma</option>
-  <option value="OR">Oregon</option>
-  <option value="PA">Pennsylvania</option>
-  <option value="RI">Rhode Island</option>
-  <option value="SC">South Carolina</option>
-  <option value="SD">South Dakota</option>
-  <option value="TN">Tennessee</option>
-  <option value="TX">Texas</option>
-  <option value="UT">Utah</option>
-  <option value="VT">Vermont</option>
-  <option value="VA">Virginia</option>
-  <option value="WA">Washington</option>
-  <option value="WV">West Virginia</option>
-  <option value="WI">Wisconsin</option>
-  <option value="WY">Wyoming</option>
-</select>
-</form>
 </div>
-<br>
-<br>
+
 
 <!--summary table -->
-
-<div class = "col-md-1"></div>
-<div class = "col-md-6">
-  <div class="form">
+<div class="row col-md-4">
   <div class="box" id="order-summary">
     <div class="box-header">
-      <h3>Shipping Options</h3>
+      <h3>Order summary</h3>
     </div>
     <p class="text-muted"> &nbsp</p>
 
@@ -327,60 +345,63 @@
       <table class="table">
         <tbody>
           <tr>
-            <input type="radio" name="gender" value="male" checked> Standard Shipping<br>
-            <font color = "red" > Cost for this shipping method: $0.00</font><br><br>
+            <td>Order subtotal</td>
+            <th>$21.58</th>
           </tr>
 
           <tr>
-            <input type="radio" name="gender" value="female"> Premium Shipping<br>
-            <font color = "red" > Cost for this shipping method: $10.00</font><br><br>
+            <td>Shipping</td>
+            <th id="shipping-price">$0.00</th>
           </tr>
           <tr>
-            <input type="radio" name="gender" value="other"> Express Shipping<br>
-            <font color = "red" > Cost for this shipping method: $20.00</font><br><br>
+            <td>Tax</td>
+            <th id="tax-price">$1.51</th>
           </tr>
-          
-          
+
+          <tr class="total">
+            <td><font size="4">Total</font></td>
+            <th id="total-price"><font size="4">$23.09</font></th>
+          </tr>
         </tbody>
       </table>
     </div>
 
   </div>
 </div>
+
+<div class="col-md-4">
+  <div class="box" id="shiping-summary">
+    <div class="box-header">
+      <h3>Shipping Options</h3>
+    </div>
+    <p class="text-muted"> &nbsp</p>
+
+    <div class="table-responsive" id="shipping">
+      <table class="table">
+        <tbody>
+          <tr>
+            <input type="radio" name="shippingmethod" id="ship0" value="0"> Standard Shipping<br>
+            <font color = "red" > Cost for this shipping method: $0.00</font><br><br>
+          </tr>
+
+          <tr>
+            <input type="radio" name="shippingmethod" id="ship1" value="1"> Premium Shipping<br>
+            <font color = "red" > Cost for this shipping method: $10.00</font><br><br>
+          </tr>
+          <tr>
+            <input type="radio" name="shippingmethod" id="ship2" value="2"> Express Shipping<br>
+            <font color = "red" > Cost for this shipping method: $20.00</font><br><br>
+          </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+
+
+
+  </div>
 </div>
-
- <div class="col-md-4">
-                    <div class="box" id="order-summary">
-                        <div class="box-header">
-                            <h3>Order summary</h3>
-                        </div>
-                        <p class="text-muted"> &nbsp</p>
-
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>Order subtotal</td>
-                                        <th>$21.58</th>
-                                    </tr>
-                                   
-                                    <tr>
-                                        <td>Delivery</td>
-                                        <th>$10.00</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Tax</td>
-                                        <th>$0.00</th>
-                                    </tr>
-                                    <tr class="total">                                    
-                                        <td><font size="4">Total</font></td>
-                                        <th><font size="4">$22.47</font></th>                                      
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                    </div>
 <!--end of summary table-->
 
 
@@ -388,15 +409,14 @@
 
             <hr>
 
-        </div>
 
-    </div>
-  </div>
+<!--form ends here -->
 
-  <div class="col-lg-10 col-lg-offset-1">
+<!--submit button begins here -->
+  <div class="row col-lg-4">
     <a href="sform2.html" id="signupSubmit" type="submit" class="btn btn-info btn-block">Proceed to Payment</a>
   </div>
-
+<!--submit button begins here -->
 
 </body>
 
