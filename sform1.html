@@ -65,7 +65,7 @@
           <li>|</li>
           <li><a href="under_construction.html">Contact</li>
           <li>
-              <a href = "shopping cart.html"><button type="button" class="btn btn-default" aria-label="Left Align">
+              <a href = "shopping cart.html"><button type="button" style = "border:1px solid" class="btn btn-default" aria-label="Left Align">
                 My Cart&nbsp;<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>(2)
               </button></a>
           </li>
@@ -90,7 +90,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li ><a href="index.html">Home</a></li>
             <li ><a href="under_construction.html">New Deals</a></li>
             <!--<li><a href="under_construction.html">HealthCare</a></li>-->
             <li><a href="product.html">All Products</a></li>
@@ -226,6 +226,8 @@
               <input type="checkbox" name="same-address" id="same-address" onclick="copyaddress()">
               <label for="address-2">Use this address for billing</label>
             </div>
+<br>
+<br>
 
             <div class="form-group">
               <h2>Please enter your billing information</h2>
@@ -307,44 +309,14 @@
 </select>
 </form>
 </div>
+<br>
+<br>
 
 <!--summary table -->
-<div class="form">
-  <div class="box" id="order-summary">
-    <div class="box-header">
-      <h3>Order summary</h3>
-    </div>
-    <p class="text-muted"> &nbsp</p>
 
-    <div class="table-responsive">
-      <table class="table">
-        <tbody>
-          <tr>
-            <td>Order subtotal</td>
-            <th>$21.58</th>
-          </tr>
-
-          <tr>
-            <td>Delivery</td>
-            <th>$10.00</th>
-          </tr>
-          <tr>
-            <td>Tax</td>
-            <th>$0.00</th>
-          </tr>
-          
-          <tr class="total">
-            <td><font size="4">Total</font></td>
-            <th><font size="4">$22.47</font></th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-  </div>
-</div>
-
-<div class="form">
+<div class = "col-md-1"></div>
+<div class = "col-md-6">
+  <div class="form">
   <div class="box" id="order-summary">
     <div class="box-header">
       <h3>Shipping Options</h3>
@@ -356,16 +328,16 @@
         <tbody>
           <tr>
             <input type="radio" name="gender" value="male" checked> Standard Shipping<br>
-            <th>$0.00</th>
+            <font color = "red" > Cost for this shipping method: $0.00</font><br><br>
           </tr>
 
           <tr>
             <input type="radio" name="gender" value="female"> Premium Shipping<br>
-            <th>$10.00</th>
+            <font color = "red" > Cost for this shipping method: $10.00</font><br><br>
           </tr>
           <tr>
-            <input type="radio" name="gender" value="other"> Express Shipping
-            <th>$20.00</th>
+            <input type="radio" name="gender" value="other"> Express Shipping<br>
+            <font color = "red" > Cost for this shipping method: $20.00</font><br><br>
           </tr>
           
           
@@ -375,6 +347,40 @@
 
   </div>
 </div>
+</div>
+
+ <div class="col-md-4">
+                    <div class="box" id="order-summary">
+                        <div class="box-header">
+                            <h3>Order summary</h3>
+                        </div>
+                        <p class="text-muted"> &nbsp</p>
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Order subtotal</td>
+                                        <th>$21.58</th>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td>Delivery</td>
+                                        <th>$10.00</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Tax</td>
+                                        <th>$0.00</th>
+                                    </tr>
+                                    <tr class="total">                                    
+                                        <td><font size="4">Total</font></td>
+                                        <th><font size="4">$22.47</font></th>                                      
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
 <!--end of summary table-->
 
 
