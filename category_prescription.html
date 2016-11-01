@@ -17,40 +17,32 @@
   <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <!--<link href="cssCustom/main.css" rel="stylesheet" type="text/css">-->
   <link href="cssCustom/index.css" rel="stylesheet" type="text/css">
   <link href="cssCustom/style.css" rel="stylesheet" type="text/css">
-  <link href="cssCustom/search screen main.css" rel="stylesheet" type="text/css">
-  <!--<link href="cssCustom/main.css" rel="stylesheet" type="text/css">-->
 
   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
   <script src="js/ie-emulation-modes-warning.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-      <style>
-      .breadcrumb>li+li: before{
-        color: rgba(13,13,13,1);
-      }
-      </style>
-    </head>
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-    <body>
-      <!-- The begining of the header
+
+<body>
+<!-- The begining of the header
   ================================================== -->
   <header>
     <div class="top_bar">
       <div class="container">
         <div class="navbar-header">
-          <a href="index_login.html">
+        <a href="index.html">
           <img class="logo" src="images/UPMCTag.jpg" alt="StayHealthyLOGO"></a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div id="UPMC">
-            <font face="Gravity-UltraLight", font size="3", color="#803184">| &nbsp;&nbsp; Online Pharmacy</font>
+            <font face="Gravity-UltraLight", font size="4", color="#803184">| &nbsp;&nbsp; Online Pharmacy</font>
           </div>
         </div>
 
@@ -59,7 +51,7 @@
           <li>Hello, Terry!</li>
           <li>|</li>
           <li class="dropdown">
-              <a href="under_construction.html" class="dropdown-toggle" data-toggle="dropdown">My Account<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="under_construction.html">My Profile</a></li>
                 <li><a href="under_construction.html">My Orders</a></li>
@@ -68,13 +60,13 @@
               </ul>
             </li>
           <li>|</li>
-          <li><a href="index.html">Log out</li></a>
+          <li><a href="index.html">Log out</li>
           <li>|</li>
-          <li><a href="under_construction.html">Contact</li></a>
+          <li><a href="under_construction.html">Contact</li>
           <li>
-            <a href = "shopping cart.html"><button type="button" style = "border:1px solid" class="btn btn-default" aria-label="Left Align">
-              My Cart&nbsp;<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>(2)
-            </button></a>
+              <a href = "shopping cart.html"><button type="button" style = "border:1px solid" class="btn btn-default" aria-label="Left Align">
+                My Cart&nbsp;<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>(2)
+              </button></a>
           </li>
         </ul>
 
@@ -97,18 +89,18 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index_login.html">Home</a></li>
+            <li class="active"><a href="index_login.html">Home</a></li>
             <li ><a href="under_construction.html">New Deals</a></li>
             <!--<li><a href="under_construction.html">HealthCare</a></li>-->
             <li><a href="product.html">All Products</a></li>
-            <li class="dropdown active">
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product Category<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="search screen.html">Pain Killer</a></li>
-                <li><a href="search screen.html">Allergies</a></li>
-                <li><a href="search screen.html">Vitamins</a></li>
-                <li><a href="search screen.html">Cold and Fever</a></li>
-                <li><a href="search screen.html">Prescription</a></li>
+                <li><a href="category_painkiller.html">Pain Killer</a></li>
+                <li><a href="category_allergies.html">Allergies</a></li>
+                <li><a href="category_vitamins.html">Vitamins</a></li>
+                <li><a href="category_coldandfever.html">Cold and Fever</a></li>
+                <li><a href="category_prescription.html">Prescription</a></li>
               </ul>
             </li>
             <!--<li><a href="under_construction.html">New Deals</a></li>-->
@@ -140,8 +132,7 @@
     <div class=“col-md-12” style=“padding-left:30px”>
       <ol class="breadcrumb" style="background-color: #E6E6E6;">
          <li><a href="index_login.html">Home</a></li>
-         <li><a href="search screen.html">Product Category</a></li>
-         <li><Strong>Prescription</Strong></li>
+         <li><Strong>Product Category - Prescription</Strong></li>
       </ol>
     </div>
     <div class="row">
